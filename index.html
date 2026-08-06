@@ -1,0 +1,432 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="image" href="/__l5e/assets-v1/7bba51c4-2074-4519-93db-b42bc897b897/playerknob.png" rel="preload"/>
+  <link as="image" href="/__l5e/assets-v1/68ee3702-1e0d-4fcd-ac90-9884a9326225/playerclock.png" rel="preload"/>
+  <link data-precedence="default" href="css/styles-C-j7PUVg.css" rel="stylesheet"/>
+  <link data-precedence="default" href="css/css2" rel="stylesheet"/>
+  <title>
+   Apply YTVE Filters — YouTube Video Editor Style Filter Studio
+  </title>
+  <meta content="YTVE Filters" name="author"/>
+  <meta content="@Lovable" name="twitter:site"/>
+  <meta content="Apply YTVE Filters — Cartoon, Heat Map, Thermal &amp; Pixelate Video Effects" name="twitter:title"/>
+  <meta content="Import MP4 or WebM video, apply cartoon, heat map, thermal, or pixelate filters in your browser, and export as MP4." name="twitter:description"/>
+  <meta content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b2e5885a-a4fa-4caf-8b53-dd9f29358a85/id-preview-80905c5e--3c96d30c-9ce8-449b-ba59-1d569222e3c2.lovable.app-1783664509688.png" property="og:image"/>
+  <meta content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b2e5885a-a4fa-4caf-8b53-dd9f29358a85/id-preview-80905c5e--3c96d30c-9ce8-449b-ba59-1d569222e3c2.lovable.app-1783664509688.png" name="twitter:image"/>
+  <meta content="Import clips, drop them on the timeline, apply classic YTVE filters, quick fixes and audio tweaks, then create and download a 1080p MP4." name="description"/>
+  <meta content="Apply YTVE Filters — YouTube Video Editor Style Filter Studio" property="og:title"/>
+  <meta content="Build a comp on the timeline, apply YTVE filters and audio tweaks, then export a 1080p MP4 right in your browser." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <link href="/assets/index-Bqyb3XST.js" rel="modulepreload"/>
+  <link href="/assets/routes-CRU32kIP.js" rel="modulepreload"/>
+  <link href="/assets/trash-B9KfnhOP.js" rel="modulepreload"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <style>
+   @font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+  </style>
+  <script data-proxy-url="/~api/analytics" defer="" src="js/~flock.js">
+  </script>
+ </head>
+ <body>
+  <!--$-->
+  <div class="min-h-screen bg-[#f1f1f1] text-[#333]" style='font-family:"Open Sans", Arial, sans-serif'>
+   <header class="border-b border-[#e5e5e5] bg-white">
+    <div class="mx-auto flex h-[46px] max-w-[1180px] items-center gap-2 px-4">
+     <button class="flex h-[26px] w-[30px] items-center justify-center rounded-sm border border-[#d3d3d3] bg-[#f8f8f8] hover:bg-[#f0f0f0]" title="Back">
+      <img alt="Back" class="h-3 w-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAACvElEQVR4nOXXv0ukRxzH8dc+Se5AdrFQohYWAUGblCFd4hamC0gOLITDfyABwQiusbDYaCGEpFqw8BdBEDkQrPYO0cYilbESJBGClSvaqLtZ99xN4fNEkVvcu9uD9e7TfJ6ZeZ7vM/N+5jszT6xSqaiHhoeH2yAejz+F7e3tX8Oml7C5uQk2NjZqihfUpVfvQLE6EgNNTU0VSCQSf8Px8fHnsLOzU6B2cg1L7ON6B4zFYpfQ3d39GQRB8By2tra+hmQyWeZ+ch8OsUj9/f0BLC0tfQnT09O/QyqVGoRkMonq5D48YkFwPebBwcFPYHZ29jtIp9M/w8TExE9UJ9ewxGKpVKoQXtfUyVgsVlN7Op1+dLv+/PwcZDKZAuTz+e9hcnJyDnp7e3FDrnGJjY2N/QtdXV2PIZFIgPb2dtDR0QHi8Tho+7QNBB+92ZhOTk5AJpPJQ6FQ6IepqakX3JBrWGL/Z2W0Z963d1a83d7a0tIChoaGmmB+fv4ZjI6OfgUzMzN/8hCIRdl01yNFJO/LylrV2dkJBgYGErCysvIcRkZGvuAhEItUba5FpOp1fovU09MD+vr6yrC+vr7OQyIWqdpcqtcci7S3twey2WwApVLpWx4CsbtZd3cu3bvORdU1Aj08PASrq6tnUCwW+0L/h4dALFK19ara+nZzQ20vjPbKxcXFPBSLxSeh74aOBidWhoODg8vbDbu7u6984G3PY3NzcwW4urr6IfQXobvtDU2sidpX9PvuC4KgeLt8eXn9IRYWFopQKpV+CX0udK/yhib2TlQul8Hy8nIJzs7OnoU+Afl8HhQK178cUfni4gKNTOz09LSuAVtbW8Ha2loZjo6O/oDx8fGnrxOncYnVO2ClUnkE+/v7f0Eul/smbCq/Tpz3n1hzc3M7VCqVHyGbzf4GuVzu5ZvEa1hi/wHZuy9WJYrMKgAAAABJRU5ErkJggg=="/>
+     </button>
+     <button class="flex h-[26px] items-center gap-1 rounded-sm border border-[#d3d3d3] bg-[#f8f8f8] px-2 text-[12px] text-[#333] hover:bg-[#f0f0f0]">
+      Project
+      <span class="text-[9px]">
+       ▾
+      </span>
+     </button>
+     <input aria-label="Project title" class="h-[26px] w-[270px] rounded-sm border border-[#d3d3d3] px-2 text-[12px] outline-none focus:border-[#a8a8a8]" value="My Edited Video"/>
+     <span class="ml-3 text-[12px] text-[#888]">
+      All changes saved.
+     </span>
+     <div class="ml-auto flex items-center gap-3">
+      <a href="html/bug-report.html" title="Bug Reporter">
+       <img alt="Bug Reporter" class="h-[26px]" src="data:image/png;base64,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"/>
+      </a>
+      <button class="h-[26px] rounded-sm bg-[#167ac6] px-3 text-[12px] font-semibold text-white hover:bg-[#1266a8] disabled:opacity-40" disabled="">
+       Create video
+      </button>
+     </div>
+    </div>
+   </header>
+   <main class="mx-auto max-w-[1180px] bg-white px-4 py-4">
+    <div class="grid gap-6 lg:grid-cols-[1fr_455px]">
+     <section class="lg:order-2">
+      <div class="flex items-end gap-1">
+       <button class="flex h-[34px] w-[42px] items-center justify-center border-b-[3px] border-b-[#cc181e] opacity-100" title="Your videos">
+        <img alt="Your videos" class="h-[13px] w-auto object-contain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAYCAYAAACWTY9zAAAA80lEQVR4nO2XsQ7BUBiFT6kYygMweAMMBpPtLiYvQIxmz2Bk8wwGM5M0fQWDRyCRGMRiMDE4N7matkml6h/uWb7b9CT/zZfmtnUATPDOgqwg25zJIRkAgO/7HyWlVJHLOQAUMt5EZnHxO1M6NXJGBuZNpZTH5YocAIKNOQCeOc06kC1Sm9yQHbMs1pj7h5lNcks2okpijeX5jF3JEllNKltjaSPWmN1Y2uR5jt1CMxPfzdYYgCM5JvXJX48qW2NG9mSX1ObaZkm0sQfX5R/PuoeuT2SPXJN9QLAxB8CUa/1N7sV0v82FHJG7mJ7+S1oCgo29AD70HhY5325nAAAAAElFTkSuQmCC"/>
+       </button>
+       <button class="flex h-[34px] w-[42px] items-center justify-center border-b-[3px] border-b-transparent opacity-55 hover:opacity-90" title="Creative Commons">
+        <img alt="Creative Commons" class="h-[13px] w-auto object-contain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAChElEQVR4nO3aT0gUURzA8TcySaTpwU5W7Cw7GCQUmHiISAxUMAgKQrQSBSXSgxCCf6pjXbpJ5r+TkSFGpocO/sHyUAdFIlAvDcwcRC9hZl26uJ7e8t1lnziHFX/gO33eOu57v/09Zn7v7VrxeFyFaa4TvYpuC3wDLjT8+wY8Dw9reIH/Lcx8ssJcfBSb+AAs0xJynWgeukNwLfwXnoV/whygCK6ET8Mf4GYNL/C3081TfAbEB5C0hFwnylTOwWXwS/g5/Cfk2ByrB+6EV+HrGl7g/9YWnwHxAVixiMP+CNwANxquyUS7C4/BU/AdDfEZEB+ArZS6gj6XTS+c6WXD9h4ugbvgaxriMyA+ACsWcQbR5xI6C2/BxXANzLpoFP4H34YvwkvwNJwLsxSf0BCfAfEB2Cq5rJ2BuWwuwYvwDzgfvgmvwB3wJ/gJfA+egFmuV2iIz4D4AGyl1Hn0xw3X1RleL4dPwv9hH34LN8E8BODdho27vFsa4jMgPgD7gNdZBvMD2IVzDO9j+sCyD/CeaU8fxGdAfAC2Umod/WLDdSxxH8ML8AmYd5J3cDvMZcaHaTPMcV14U0N8BsQHYKvk85/78Bl4GeYOrhrehllO86H2Fb4Av4K/wCynq+CPGuIzID4AKxZxStHnzmgAfnRI80ltL+BuOFGDic+A+ABST6ff4G8P4Fa4P8NzqodZfk9qeIF/fLR4ZFpqOc27DR80r+HL8FP4V8ixC+BnMOul7zB3cIkmPgPiA9jva9ZT6PbBjTDrnM/wGswBeJxYAfNAgHeeNg0v8HfSzVN8BsQHYFxCbK4TZZfl9EOYu6pzMAfg7o9HhfwlQKJ09wIeKaVv4jMgPoA9HBmAQKpo000AAAAASUVORK5CYII="/>
+       </button>
+       <button class="flex h-[34px] w-[42px] items-center justify-center border-b-[3px] border-b-transparent opacity-55 hover:opacity-90" title="Photos">
+        <img alt="Photos" class="h-[13px] w-auto object-contain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAYAAAAJKR1YAAABeUlEQVR4nNWWwSpEURzGv0FZWCmsZmgkE4WF2JiFB5gFC2/gCaR4BcobeAES76ApC9GUTM2UBs1KFlYWirH5/XM77sm9N3Hut/n9T/c7956+7vmfU6iXK0qjaqdVpTyDIwmnPsN1SaqXK/U4U1+q1fyBBpIaq52WlXswaTIm89v8lThTcAkVJJ1Qr8H+jO+6gy9wGE7+MO8dnkqBJvQRqSXp0fGMe+Y24Ca88viW4CGc9/h6UqAJ9agtmenIM0lqwxK8hqtwCG7DGdiEB/AVnsOFuAUFndADrESeSZI1IPuXlqElegNHPd94gnPQdt1FnDm4hKKdegK2HY8lY4lcQuu4vmRMY3AL7sIuLEbNQSdk8vWdrjOeTfkt15/fhHwqOmPrM7WE85vO2H2fpAATivahpLI+dA/tDCt9t0r62p2LcArmow9lScg9ywbhDrTddAv34RvM71mWVg34W/chSYEm5N4YsyrrndoU7o3xmHrjPxci6UgKMKFP4hdC3ZjAbjQAAAAASUVORK5CYII="/>
+       </button>
+       <button class="flex h-[34px] w-[42px] items-center justify-center border-b-[3px] border-b-transparent opacity-55 hover:opacity-90" title="Audio">
+        <img alt="Audio" class="h-[13px] w-auto object-contain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAABFklEQVR4nO2WMQ4BURRF75Mp2ITEEnR2ILEBNDZCJHS2oaCnR0SvVYs16OSrRm4x4xvzh1v8W52fmJfjvhnDnHMIETPb03GWgnPuUGROLYhNwMgJWcCV5Q06EvMqd1kflmtITugXK8vLiXieglxDckL/XFlm5BqSE0oqmnsmbhe5UK4hOaGqnjL+oj3iCXEna45cQ3JCVa3MPrikSzxOQa4hOaF/ruwVdpBrSE6oqneZN3m3ilxDUciXKORLFPJFTigxszqdp8QD4hbxlXgZWkiuITkhA7Ci8zDg3LeJ77JvYwDudG6UmPUg9v6tiSv7NgmADZ37JWZtS7oAEGxITigBMKLzhZh/JJvEN+I18SKEkFxDckJPL59AWO4e2iIAAAAASUVORK5CYII="/>
+       </button>
+       <button class="flex h-[34px] w-[42px] items-center justify-center border-b-[3px] border-b-transparent opacity-55 hover:opacity-90" title="Transitions">
+        <img alt="Transitions" class="h-[13px] w-auto object-contain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAYCAYAAACMcW/9AAAA8UlEQVR4nO3XPRLBQBjG8TcGlVEpqDROwF24AI1KY8aMj8LXmNFoaJyAI3AGTqBRaVRGRUHhv81KEWYnsZGn+aXY3WzeTSa7johs5JUW7uU3UsSJiEgswIl8FEdEHlwrV9jFg09zKeAAK+iIWFpRPXdc4hBPhu6dRbVyVUy6NQ5FRfVccYZTvHjsn8YmNjDlpXMoK6rnjCNc4A3Vu1bHNma+udlfVFTPEXvYx7yJwa2paNzgWI7Bsd5iTUVNfPVjnGP01Ud/JpMJcveUww7WMOHW2MqKKteontTvHb5auTLat8Pfcq1OobuA5qKnhHadQp+UaDCV+PZluAAAAABJRU5ErkJggg=="/>
+       </button>
+       <button class="flex h-[34px] w-[42px] items-center justify-center border-b-[3px] border-b-transparent opacity-55 hover:opacity-90" title="Text">
+        <img alt="Text" class="h-[13px] w-auto object-contain" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACGUlEQVR4nNWazytmURjHn5cTjVIvGim/N0pqomHDih07FiTM8kgpKUsr8y+YzJzYSmo20xQLydJCFkqRsmBDoTebd6GR1dXH273dc+ZOk+dZfZ7rec65X9/T7Zx735y1VtLCOdeH9Au4H9wOrgH/Ad+CL8B74PUIrLU3afdWllbw3kO9gByXkHOuCn/7Dp75b3ckUgBPRmCt3Y0rVu+AegGmJP8Bng4c6x58Ba4HN3qMkwdvR+Cca4vYWvsQsXoH1AvIichn5EeB/fPgNfBzQv0w+DfY5x85FYG1djOk8V2HegFGRIYCe87A3wJ7d8An4G6P3tgnmHoH1AswIrKKfD2pEPGUYb48uCGwtzzuonoH1AswIlJEXkwqRFSCe8At4A5wF3gE/NFjrtRQ74B6AaXb6Q/gOfA4mMum4p/fUWCod0C9ACNv3+EcgD9lGPcRfA7eB3Nr/ddzqXdAvQAjIl+R+1hZAC+Df4GvPcYZ8KhJDfUOqBdgRGQ0sGcJvJFh7roMva+h3gH1Aoy8ffXnE5cZ5msFdyRWBYR6B9QLMCLC71BNHj2z4ENw0mmuGbwFjj2kh4Z6B9QLMCLyE/mCR88EmId0bpt5UuOhPsuyycddVO+AegFGRFaQD4J9ttbV4F6Pei6zU/CYR2/s+OodUC+g9Es93wstgrnl7gTzaXMHPgbzKbcJ5g9IOFctuC7h+uuHFfUOqBfwAnCHRtkcDm48AAAAAElFTkSuQmCC"/>
+       </button>
+       <button class="flex h-[34px] w-[42px] items-center justify-center border-b-[3px] border-b-transparent opacity-55 hover:opacity-90" title="Help">
+        <span class="flex h-[16px] w-[16px] items-center justify-center rounded-full border border-[#555] text-[10px] font-bold">
+         ?
+        </span>
+       </button>
+      </div>
+      <div class="min-h-[228px] border-t border-[#e0e0e0] pt-3">
+       <div class="space-y-3">
+        <div class="flex items-center gap-2">
+         <button class="h-[30px] shrink-0 whitespace-nowrap rounded-sm bg-[#167ac6] px-3 text-[12px] font-semibold text-white hover:bg-[#1266a8]">
+          Import videos
+         </button>
+         <span class="text-[11px] leading-4 text-[#777]">
+          Drag &amp; drop, or tap to pick. MP4 / WebM — AVI is converted to MP4 (x264 / AAC).
+         </span>
+         <input accept="video/mp4,video/webm,video/x-msvideo,.avi,video/*,image/*" class="hidden" multiple="" type="file"/>
+        </div>
+        <div class="rounded-sm border border-dashed border-[#ccc] p-6 text-center text-sm text-[#888]">
+         Drop videos here to start your project.
+        </div>
+       </div>
+      </div>
+     </section>
+     <section class="space-y-2 lg:order-1">
+      <div class="relative flex aspect-video w-full items-center justify-center overflow-hidden bg-black">
+       <div class="p-8 text-center text-sm text-white/70">
+        Import a video to preview it here.
+       </div>
+       <canvas class="block max-h-full max-w-full hidden">
+       </canvas>
+       <video class="hidden" crossorigin="anonymous" playsinline="">
+       </video>
+      </div>
+      <div class="select-none bg-[#1b1b1b]">
+       <div class="relative h-[5px] cursor-pointer bg-[#2b2b2b]">
+        <div class="absolute inset-y-0 left-0" style="width:0%;background-color:#cc181e;background-image:repeating-linear-gradient(90deg, rgba(255,255,255,0.10) 0 1px, rgba(0,0,0,0.10) 1px 2px)">
+         <img alt="" class="pointer-events-none absolute -right-[6px] top-1/2 h-[12px] w-[12px] -translate-y-1/2" src="images/playerknob.png"/>
+        </div>
+       </div>
+       <div class="flex h-[32px] items-center gap-3 px-2">
+        <button class="flex h-[18px] w-[18px] items-center justify-center disabled:opacity-40" disabled="" title="Play">
+         <span class="block h-0 w-0" style="border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent">
+         </span>
+        </button>
+        <img alt="Volume" class="h-[13px] w-auto opacity-90 invert" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAYAAABE4bxTAAAC/ElEQVR4nOXXX0jddRjH8deOOzuGf8uBoUMSluAQ1O4iQXEEQTHC1kUROBBMxrrywt3qCZawGy8TjATRc0bCqPCiCGyXwbJROLCgG5PkDOWMox7Pz6Pd/A6dybZ0MTir5+Z5vt/P83ku3nx/P77fE54wksnkubB8Ncyfhzn/pDMh8m/MTyNOHNcwNzf3BuTz+S/g4OCgAlZWVqIQj8f3HuG7EpYfh7kHIpHIT8V9JUfo5FEbZ2ZmrkIQBNcgm80+oMfj8ceenVu3bmWgs7OzCmKx2FdQVlbWCtFoNMOzRGh6evpUWH4K2Wz2EuRyuUdZDg75m8PyD+jv7/8GhoaGvob29vYLEI1Gr4T5E0qR0NTU1IWwfrFY2Nvbex92d3e7w/WRBk5NTVVCEAS/hls3w3wREonENTh79mwPxGKxD6GqqqpECWWz2WRYlxcLBSL5/PF+vAMDA7swMjJyBxobG9+BycnJ12FwcPA7WFtb+xGampp6IJ1ON1OKhLa2tsr/ue1YEcDt27c/g7q6ulcgk8n0hfq3kMvlfglzD2xsbLRQioSCIHgqg1tbW3+Dwvx0Ol1TrMdisWyxvrm5Wc7/iVB9ff0l/iawurr6c7EejUabi/W1tbU/KUVCy8vLX0JFRcULxUJtbe1L4f6Z4wwcHx9/DnZ2di7CvXv37sLs7Gwi1E9BJpPphu3t7Q2Yn5+/SykSunHjxlhYVxYLlZWVZ6Cvr28IGhoauo4ycGRkJIC2trZxWF9fL5yd3yEIgo8gn8+fhtXV1ZuQTCbvU4KEHnenLtyVXoPe3t5+6Ojo+AAikUi0uPn69euHZ50O830YGxs7B7lc7gfIZDK7kEgk3oKJiYnvecYIHY6XoaWl5T04f/78ZSgvL6+H6urqkzA6OvrQ68Hw8HAc9vf3r8Li4uI4LC0tjUIqlQp4xgkV4nmorq5+G7q6ut6EhYWFd0P94OE2nVBTU9MN6XR6DlKp1Hpx03+CUCEKX1nhjX/niL7CayYHqVTqAbHkCP0FlSoMuVezj+sAAAAASUVORK5CYII="/>
+        <span class="text-[11px] tabular-nums text-white/85">
+         0:00
+         <!-- -->
+         /
+         <!-- -->
+         0:00
+        </span>
+        <div class="ml-auto flex items-center gap-3">
+         <img alt="Settings" class="h-[13px] w-[13px]" src="images/playerclock.png"/>
+         <img alt="YouTube" class="h-[13px] w-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAcCAYAAAATFf3WAAACDElEQVR4nM2YTWsTURRAz4tPTRTSCbpy0wTBaeuiWbhx5dZdI/gD3Ltpdgpu/AVGoyBIVQgFAxZUUNBdoLuKZlMdUTGgIv2gGautaaJzXXSGNn6kNG+GyRkuwzyYy5k77w3zrno6PEzA2FAqDxSAU2yR9SMKGn4E1IAHQD0YUIHgaDp5BzgXkchuKQFFAA0wkk5ekcGRA5j0z0XVOG5bQDM+l55ktCgKcVv0oKA9TybitujBhBaUFbdFDywtQj5uix7kEx5YHtBvpM+fQTJ7+75/h7CUY9ti8oi249Ba/MhS5So/Zp4hK22TdH+hXhkKjjoOAN7PX6x+/kDzxmVaj+ZCkQNQ88fMBMfeOF3XrfU1vr5+yffqTTYePjeSA9CecYpukgcOsm/8JMnsCGtn51m/f4uWgajGqH7/JqH3MHToMPtTJ9BHjpI6/QL34iWkufv5qb2wS7g9+cY32jPXaU4/RlY6/eWQCCoI8OnaBZrTT/CWzVa1DttvoVpmeapC5/1qKPm0F5LhQrXM4lSFzrtwxAKMBb/cK7N0u0L7bbhiAWouZ/YdjBrtgQtYMXv8DzchUBdgQKOuBRqD+o4VNBICtYh+lYxDoKZmc7YlA7ppUpBJAK4gJWHgjpIgrvZli/48nIypWH9yF3/jrmZzNh4SrJosm62PcbbaHZYQzb5FbbY43G1DXa0PBfwGyJ9mK5WY6CAAAAAASUVORK5CYII="/>
+         <span class="text-[13px] leading-none text-white/80">
+          ⛶
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="px-1 text-[11px] text-[#777]">
+       Clip
+       <!-- -->
+       0
+       <!-- -->
+       /
+       <!-- -->
+       0
+       <!-- -->
+       ·
+       <!-- -->
+       —
+      </div>
+     </section>
+    </div>
+    <section class="relative -mx-4 mt-4 border-t border-[#e0e0e0] bg-[#f9f9f9] px-4 pb-8 pt-4">
+     <div class="relative overflow-x-auto overflow-y-hidden pb-2">
+      <div class="relative" style="min-width:358px">
+       <div class="pointer-events-none absolute bottom-1 top-0 z-20 w-[3px] bg-[#4fa3e3]" style="left:38px">
+        <button class="pointer-events-auto absolute -left-[8px] top-[12px] flex h-[17px] w-[17px] items-center justify-center bg-[#167ac6] hover:bg-[#1266a8]" title="Split clip at the playhead">
+         <img alt="Split" class="h-[11px] w-[11px] invert" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAiCAYAAABIiGl0AAAB1UlEQVR4nNXXP0hWURzG8UcpeSXIJBUpI1EwsNnRQQTTURQnCWkoCEycXGpIwz8o6qAI4SItIaarLW4RLekQjpFC0ODg0BDl/Z2W7w/swr3v+0pwvWf5nPeee855H8695z1vRff8B12k3K+p7qX6Ap/gl7R+Sw9uSpIqLzTrfyhXyu3Qfr3QIkkhhB0uFbCilP4hBEl5SmwWHlItpN6Y3F9SrhKH0JHQVFOk61VJGts96ZVyldisrsyx/Zl4jo1SzhJXFxlrBH1Ha4nddyjlKXEUhd8JTdtYm9D+C8ekPCS+UxmuSZJZ8DX+hLexKaHrPj7CA+kyJL6lqJVqD3qiz5IUmdb43I7NOIgLeIwzuI5n5yfOLnFj9KdLkkza5VoV+jccxaFY3494A1/iNCY9/ZKyTByZLVP3w9cIrqKvreFrfIwRbmJqUi/ZJTYzf/98zfyp/BG79xW+Q0+8goflTJzhGkdhi7qfi/uxAfdwEmdjYwxjGz7Fb2kTZ7rG/p4eYTf6zjWFfm72E8VX3EAf5w12pk2c6V7t7910zH+Kmd2j6ms/h4t4F/tKmTj7X6dixUL4TvUUn2E9DuDbUsa7/Ikl/ZQks+D/i30PH8f3OFHKYJkl/gtHLHh2MnrtdwAAAABJRU5ErkJggg=="/>
+        </button>
+        <span class="absolute -left-[11px] bottom-[-16px] bg-[#167ac6] px-1 text-[10px] font-semibold tabular-nums text-white">
+         0:00
+        </span>
+       </div>
+       <div class="flex items-start gap-3">
+        <div class="flex h-[52px] w-[26px] shrink-0 items-center justify-center">
+         <img alt="Video track" class="h-[16px] w-[26px] object-contain opacity-80" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAYCAYAAACWTY9zAAAA80lEQVR4nO2XsQ7BUBiFT6kYygMweAMMBpPtLiYvQIxmz2Bk8wwGM5M0fQWDRyCRGMRiMDE4N7matkml6h/uWb7b9CT/zZfmtnUATPDOgqwg25zJIRkAgO/7HyWlVJHLOQAUMt5EZnHxO1M6NXJGBuZNpZTH5YocAIKNOQCeOc06kC1Sm9yQHbMs1pj7h5lNcks2okpijeX5jF3JEllNKltjaSPWmN1Y2uR5jt1CMxPfzdYYgCM5JvXJX48qW2NG9mSX1ObaZkm0sQfX5R/PuoeuT2SPXJN9QLAxB8CUa/1N7sV0v82FHJG7mJ7+S1oCgo29AD70HhY5325nAAAAAElFTkSuQmCC"/>
+        </div>
+        <div class="flex min-h-[52px] flex-1 items-stretch gap-[2px]">
+         <div class="flex h-[52px] w-[95px] items-center justify-center border border-dashed border-[#bbb] text-[11px] text-[#777]">
+          Drag videos here
+         </div>
+        </div>
+       </div>
+       <div class="mt-3 flex items-start gap-3">
+        <div class="flex h-[36px] w-[26px] shrink-0 items-center justify-center">
+         <img alt="Audio track" class="h-4 w-4 object-contain opacity-80" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAABFklEQVR4nO2WMQ4BURRF75Mp2ITEEnR2ILEBNDZCJHS2oaCnR0SvVYs16OSrRm4x4xvzh1v8W52fmJfjvhnDnHMIETPb03GWgnPuUGROLYhNwMgJWcCV5Q06EvMqd1kflmtITugXK8vLiXieglxDckL/XFlm5BqSE0oqmnsmbhe5UK4hOaGqnjL+oj3iCXEna45cQ3JCVa3MPrikSzxOQa4hOaF/ruwVdpBrSE6oqneZN3m3ilxDUciXKORLFPJFTigxszqdp8QD4hbxlXgZWkiuITkhA7Ci8zDg3LeJ77JvYwDudG6UmPUg9v6tiSv7NgmADZ37JWZtS7oAEGxITigBMKLzhZh/JJvEN+I18SKEkFxDckJPL59AWO4e2iIAAAAASUVORK5CYII="/>
+        </div>
+        <div class="flex min-h-[36px] flex-1 items-stretch gap-[2px]">
+         <div class="flex h-[36px] w-[95px] items-center justify-center border border-dashed border-[#bbb] text-[11px] text-[#777]">
+          Drag audio here
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mt-5 flex items-center justify-end gap-2">
+      <img alt="Zoom out" class="h-[15px] w-[15px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAA7ElEQVR42mNgQAOvXr0yAOJ+IL4NxL+B+D8QP379+vV0IHZgIASAipuRNGLFQIMWA2keXAasxqcZDZ/GMAjqgv+kYJCL4AYAOSaEvIDHIB+YK/qxKXj48OGDAwcO7N+3b9+Bu3fv3sBh0HyYIffRJZ88efJy7dq1b9etW/cfin/fvn37MhZDnsMMwfDKsWPHDiAZAMZ79uw5iM01VDXkNrrE06dPP6xfv/4lsndu3bp1DYshj/EG7P379++CAhXkAhzhgRKwBuRG8YsXL1yol9ioluxJcRHeDIijKIAnKlBRAAqD////szDQAgAACNYTdJc6kiwAAAAASUVORK5CYII="/>
+      <input aria-label="Timeline zoom" class="w-[80px] accent-[#167ac6]" max="4" min="0.5" step="0.1" type="range" value="1"/>
+      <img alt="Zoom in" class="h-[15px] w-[15px]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAyElEQVR42mNgQAOvXr0yAOJ+IL4NxL+B+D8QP379+vV0IHZgIASAipuRNGLFQIMWA2keXAasxqcZDZ/GMAjqgv+kYJCL4AYAOSaEvIDHIB+YK/pxKAIFbAVQYQGQPo9DzXyYIfexSD5/9uyZCMy1////ZwGKHcemDmYINq/0owf8y5cvM7C5hqqG3MYi+R6IJdC8cxqLuseEAvY6KFChLjhOKGANyI3iFy9euFAvsVEt2ZPiIrwZEEdRAE9UoKIAFAagmGKgBQAAnxXxHLSSsQYAAAAASUVORK5CYII="/>
+     </div>
+    </section>
+   </main>
+  </div>
+  <!--/$-->
+  <script async="" src="js/index-Bqyb3XST.js" type="module">
+  </script>
+  <aside aria-label="Edit with Lovable" dir="ltr" id="lovable-badge" lang="en" role="complementary">
+   <a aria-label="Edit with Lovable" href="https://lovable.dev/projects/lovp_4s452g7dtf8zbrdm80gbcsv9pm?utm_source=lovable-badge" id="lovable-badge-cta" rel="noopener nofollow" target="_blank">
+    <span id="lovable-badge-text">
+     Edit with
+    </span>
+    <svg fill="none" height="16" viewbox="0 0 52 16" width="52" xmlns="http://www.w3.org/2000/svg">
+     <path clip-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" fill="#FCFBF8" fill-rule="evenodd">
+     </path>
+     <path d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z" fill="#FCFBF8">
+     </path>
+     <path clip-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" fill="url(#a)" fill-rule="evenodd">
+     </path>
+     <defs>
+      <radialgradient cx="0" cy="0" gradienttransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientunits="userSpaceOnUse" id="a" r="1">
+       <stop offset=".106" stop-color="#FE7B02">
+       </stop>
+       <stop offset=".394" stop-color="#FE3F21">
+       </stop>
+       <stop offset=".608" stop-color="#F858BC">
+       </stop>
+       <stop offset=".929" stop-color="#575ECF">
+       </stop>
+      </radialgradient>
+     </defs>
+    </svg>
+   </a>
+   <span aria-hidden="true" id="lovable-badge-divider">
+   </span>
+   <button aria-label="Dismiss" id="lovable-badge-close" title="Dismiss" type="button">
+    <svg aria-hidden="true" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+     <path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z">
+     </path>
+    </svg>
+   </button>
+  </aside>
+  <script>
+   // Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+  </script>
+ </body>
+</html>
